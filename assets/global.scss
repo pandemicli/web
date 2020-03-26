@@ -1,0 +1,51 @@
+// fonts
+
+@import url('https://rsms.me/inter/inter.css');
+
+// tailwind
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// global
+
+*,
+*:active,
+*:focus {
+  outline: 0 !important;
+}
+
+a {
+  @apply text-primary;
+
+  &:hover {
+    filter: brightness(1.2);
+  }
+
+  transition: 0.2s;
+}
+
+h1 {
+  @apply text-primary text-3xl font-semibold;
+}
+
+h2 {
+  @apply text-accent text-2xl font-medium mt-8 leading-tight;
+}
+
+p {
+  @apply max-w-2xl my-4;
+}
+
+figure {
+  @apply m-8 w-screenshot;
+
+  img {
+    @apply rounded-lg;
+  }
+
+  figcaption {
+    @apply mt-4;
+  }
+}

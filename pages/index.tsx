@@ -1,0 +1,100 @@
+import { NextPage } from 'next'
+import Head from 'next/head'
+import React from 'react'
+
+const Home: NextPage = () => (
+  <>
+    <Head>
+      <title>Pandemic.li / Social tracking for Coronavirus</title>
+      <meta content="Social tracking for Coronavirus" name="description" />
+      <meta
+        content="pandemic, corona, virus, covid-19, tracking, safety, health"
+        name="keywords"
+      />
+    </Head>
+
+    <header className="flex items-center">
+      <img alt="Pandemic.li" className="h-16 w-16" src="/img/pandemicli.svg" />
+      <div className="ml-8">
+        <h1>Pandemic.li</h1>
+        <p className="m-0">Track who you meet, where you go</p>
+      </div>
+    </header>
+
+    <main>
+      <section className="my-12">
+        <h2>What is Pandemic.li?</h2>
+        <p>
+          Pandemic.li is a mobile app that allows you to keep a track of people
+          you meet and places you visit.
+        </p>
+        <h2>How does it help?</h2>
+        <p>
+          If you are infected, we notify everyone who has been in contact with
+          you and anyone else who went to the same place as you to get tested
+          and take the necessary precautions.
+        </p>
+        <h2>If I use this app, I can go out and meet anyone I want?</h2>
+        <p>
+          Coronavirus is highly contagious and the best practice is
+          self-isolation and social distancing. Most governments have initiated
+          lockdowns and companies asking their employees to work from you. So
+          no, just using this app will not keep you safe. But it will help you
+          get ahead in the case of known cases in your circle.
+        </p>
+        <h2>Okay, enough talk. I am sold. Where do I get it?</h2>
+        <p>
+          I am working hard to bring this to to App Store and Google Play within
+          the next few days. Please stay tuned and follow{' '}
+          <a href="https://twitter.com/pandemicli">@pandemicli</a> on Twitter
+          for updates.
+        </p>
+        <p>In the meantime, here are a few screenshots of what to expect.</p>
+      </section>
+
+      <section className="flex flex-wrap -m-8">
+        <figure>
+          <img alt="Today" src="/img/screenshots/1-today.png" />
+          <figcaption>
+            Day screen to track people you have met and places you have visited.
+            You can go back in the past (not literally!) and log days you might
+            have missed.
+          </figcaption>
+        </figure>
+        <figure>
+          <img alt="Contacts" src="/img/screenshots/2-contacts.png" />
+          <figcaption>
+            Contacts list; add, remove, favorite. You can sync your phone
+            contacts with a single tap.
+          </figcaption>
+        </figure>
+        <figure>
+          <img alt="Places" src="/img/screenshots/3-places.png" />
+          <figcaption>
+            Places list; add, remove, favorite. Search from Google Places, drop
+            a marker on a map, or just call it <em>Conference Room 2B</em>.
+          </figcaption>
+        </figure>
+        <figure>
+          <img alt="Profile" src="/img/screenshots/4-profile.png" />
+          <figcaption>
+            Add other Pandemic.li users with a quick scan or share your own QR
+            code.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section className="my-12">
+        <h2>Wait, who are you?</h2>
+        <p>
+          I am Ali Zahid, a guy who builds cool stuff with React/Native,
+          Node.js, MongoDB, GraphQL, and TypeScript. Check out my{' '}
+          <a href="http://alizahid.dev/">blog</a>.
+        </p>
+        <p>Thanks!</p>
+      </section>
+    </main>
+  </>
+)
+
+export default Home
