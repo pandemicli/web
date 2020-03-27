@@ -26,7 +26,10 @@ const Home: NextPage = () => (
         <h2>What is Pandemic.li?</h2>
         <p>
           Pandemic.li is a mobile app that allows you to keep a track of people
-          you meet and places you visit.
+          you meet and places you visit. It also, optionally, keeps a track of
+          your location in the background every 10 minutes. This data can be
+          shared with healthcare professionals to help them track and find other
+          potential cases.
         </p>
         <h2>How does it help?</h2>
         <p>
@@ -38,7 +41,7 @@ const Home: NextPage = () => (
         <p>
           Coronavirus is highly contagious and the best practice is
           self-isolation and social distancing. Most governments have initiated
-          lockdowns and companies asking their employees to work from you. So
+          lockdowns and companies asking their employees to work from home. So
           no, just using this app will not keep you safe. But it will help you
           get ahead in the case of known cases in your circle.
         </p>
