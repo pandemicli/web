@@ -27,8 +27,8 @@ const Home: NextPage = () => (
         <p>
           Pandemic.li is a mobile app that allows you to keep a track of people
           you meet and places you visit. It also, optionally, keeps a track of
-          your location in the background every 10 minutes. This data can be
-          shared with healthcare professionals to help them track and find other
+          your location in the background when you move. This data can be shared
+          with healthcare professionals to help them track and find other
           potential cases.
         </p>
         <h2>How does it help?</h2>
