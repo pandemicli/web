@@ -41,11 +41,11 @@ const Home: NextPage = () => (
         <p>
           Coronavirus is highly contagious and the best practice is
           self-isolation and social distancing. Most governments have initiated
-          lockdowns and companies asking their employees to work from home. So
-          no, just using this app will not keep you safe. But it will help you
-          get ahead in the case of known cases in your circle.
+          lockdowns and companies are asking their employees to work from home.
+          So no, just using this app will not keep you safe. But it will help
+          you get ahead in the case of known cases in your circle.
         </p>
-        <h2>All right, I am sold. Where do I get it?</h2>
+        <h2>I am sold. Where do I get it?</h2>
         <p>
           I am working hard to bring this to App Store and Google Play within
           the next few days. Please stay tuned and follow{' '}
