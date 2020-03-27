@@ -42,9 +42,9 @@ const Home: NextPage = () => (
           no, just using this app will not keep you safe. But it will help you
           get ahead in the case of known cases in your circle.
         </p>
-        <h2>Okay, enough talk. I am sold. Where do I get it?</h2>
+        <h2>All right, I am sold. Where do I get it?</h2>
         <p>
-          I am working hard to bring this to to App Store and Google Play within
+          I am working hard to bring this to App Store and Google Play within
           the next few days. Please stay tuned and follow{' '}
           <a href="https://twitter.com/pandemicli">@pandemicli</a> on Twitter
           for updates.
