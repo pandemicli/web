@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react'
 
-import { theme } from '../lib'
+import { useTheme } from '../hooks'
 
 interface Props {
   className?: string
@@ -8,7 +8,9 @@ interface Props {
 }
 
 export const Icon: FunctionComponent<Props> = ({ className, name }) => {
-  const color = theme.get() === 'dark' ? '#fff' : '#000'
+  const { dark } = useTheme()
+
+  const color = dark ? '#fff' : '#000'
 
   if (name === 'github') {
     return (

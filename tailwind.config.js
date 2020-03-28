@@ -3,6 +3,7 @@ const darkMode = require('tailwindcss-dark-mode')()
 module.exports = {
   plugins: [darkMode],
   theme: {
+    darkSelector: '.dark-mode',
     extend: {
       colors: {
         accent: '#8bc34a',
