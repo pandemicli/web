@@ -94,9 +94,24 @@ const Home: NextPage = () => (
           Node.js, MongoDB, GraphQL, and TypeScript. Check out my{' '}
           <a href="http://alizahid.dev/">blog</a>.
         </p>
-        <p>Thanks!</p>
       </section>
     </main>
+
+    <footer className="flex items-center justify-between text-sm max-w-2xl">
+      <span>
+        &copy; {new Date().getFullYear()} /{' '}
+        <a href="http://alizahid.dev/">Ali Zahid</a>
+      </span>
+      <nav className="flex">
+        <a href="https://twitter.com/pandemicli">
+          <img
+            alt="Twitter"
+            className="h-6 w-6"
+            src="/img/social/twitter.svg"
+          />
+        </a>
+      </nav>
+    </footer>
   </>
 )
 

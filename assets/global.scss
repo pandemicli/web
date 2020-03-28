@@ -34,6 +34,10 @@ h2 {
   @apply text-accent text-2xl font-medium mt-8 leading-tight;
 }
 
+img {
+  @apply block align-top outline-none max-w-full;
+}
+
 p {
   @apply max-w-2xl my-4;
 }
