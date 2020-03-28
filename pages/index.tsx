@@ -2,6 +2,8 @@ import { NextPage } from 'next'
 import Head from 'next/head'
 import React from 'react'
 
+import { Icon } from '../components'
+
 const Home: NextPage = () => (
   <>
     <Head>
@@ -57,7 +59,16 @@ const Home: NextPage = () => (
 
       <section className="flex flex-wrap -m-8">
         <figure>
-          <img alt="Today" src="/img/screenshots/1-today.png" />
+          <img
+            alt="Today"
+            className="dark:hidden"
+            src="/img/screenshots/light/1-today.png"
+          />
+          <img
+            alt="Today"
+            className="hidden dark:block"
+            src="/img/screenshots/dark/1-today.png"
+          />
           <figcaption>
             Day screen to track people you have met and places you have visited.
             You can go back in the past (not literally!) and log days you might
@@ -65,21 +76,48 @@ const Home: NextPage = () => (
           </figcaption>
         </figure>
         <figure>
-          <img alt="Contacts" src="/img/screenshots/2-contacts.png" />
+          <img
+            alt="Contacts"
+            className="dark:hidden"
+            src="/img/screenshots/light/2-contacts.png"
+          />
+          <img
+            alt="Contacts"
+            className="hidden dark:block"
+            src="/img/screenshots/dark/2-contacts.png"
+          />
           <figcaption>
             Contacts list; add, remove, favorite. You can sync your phone
             contacts with a single tap.
           </figcaption>
         </figure>
         <figure>
-          <img alt="Places" src="/img/screenshots/3-places.png" />
+          <img
+            alt="Places"
+            className="dark:hidden"
+            src="/img/screenshots/light/3-places.png"
+          />
+          <img
+            alt="Places"
+            className="hidden dark:block"
+            src="/img/screenshots/dark/3-places.png"
+          />
           <figcaption>
             Places list; add, remove, favorite. Search from Google Places, drop
             a marker on a map, or just call it <em>Conference Room 2B</em>.
           </figcaption>
         </figure>
         <figure>
-          <img alt="Profile" src="/img/screenshots/4-profile.png" />
+          <img
+            alt="Profile"
+            className="dark:hidden"
+            src="/img/screenshots/light/4-profile.png"
+          />
+          <img
+            alt="Profile"
+            className="hidden dark:block"
+            src="/img/screenshots/dark/4-profile.png"
+          />
           <figcaption>
             Add other Pandemic.li users with a quick scan or share your own QR
             code.
@@ -104,11 +142,7 @@ const Home: NextPage = () => (
       </span>
       <nav className="flex">
         <a href="https://twitter.com/pandemicli">
-          <img
-            alt="Twitter"
-            className="h-6 w-6"
-            src="/img/social/twitter.svg"
-          />
+          <Icon className="h-6 w-6" name="twitter" />
         </a>
       </nav>
     </footer>

@@ -1,4 +1,7 @@
+const darkMode = require('tailwindcss-dark-mode')()
+
 module.exports = {
+  plugins: [darkMode],
   theme: {
     extend: {
       colors: {
@@ -23,5 +26,9 @@ module.exports = {
       }
     }
   },
-  variants: {}
+  variants: {
+    backgroundColor: ['dark'],
+    display: ['dark'],
+    textColor: ['dark']
+  }
 }
