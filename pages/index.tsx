@@ -143,6 +143,16 @@ const Home: NextPage = () => {
         </section>
 
         <section className="my-12">
+          <h2>Technical details</h2>
+          <p>
+            Pandemic.li is built with React Native and uses a GraphQL API built
+            with Node and uses MongoDB as the database. It is written with
+            TypeScript and uses the best practices that I know of to bring you
+            the fastest, smoothest experience possible.
+          </p>
+        </section>
+
+        <section className="my-12">
           <h2>Wait, who are you?</h2>
           <p>
             I am Ali Zahid, a guy who builds cool stuff with React/Native,
