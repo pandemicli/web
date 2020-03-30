@@ -47,6 +47,14 @@ const Home: NextPage = () => {
             you and anyone else who went to the same place as you to get tested
             and take the necessary precautions.
           </p>
+          <h2>What about privacy?</h2>
+          <p>
+            Your data is encrypted and stored in the cloud. If you report
+            positive for COVID-19, we send an anonymous notification to people
+            you may have come in contact with without revealing your name. You
+            do not need to worry about a pitchfork mob coming for you. You are
+            perfectly safe (from them!)
+          </p>
           <h2>If I use this app, I can go out and meet anyone I want?</h2>
           <p>
             Coronavirus is highly contagious and the best practice is
