@@ -12,7 +12,10 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Pandemic.li / Social tracking for Coronavirus</title>
-        <meta content="Social tracking for Coronavirus" name="description" />
+        <meta
+          content="Privacy-focused social tracking for Coronavirus"
+          name="description"
+        />
         <meta
           content="pandemic, corona, virus, covid-19, tracking, safety, health"
           name="keywords"
@@ -27,7 +30,7 @@ const Home: NextPage = () => {
         />
         <div className="ml-8">
           <h1>Pandemic.li</h1>
-          <p className="m-0">Track who you meet, where you go</p>
+          <p className="m-0">Privacy-focused social tracking for Coronavirus</p>
         </div>
       </header>
 
@@ -43,17 +46,17 @@ const Home: NextPage = () => {
           </p>
           <h2>How does it help?</h2>
           <p>
-            If you are infected, we notify everyone who has been in contact with
-            you and anyone else who went to the same place as you to get tested
-            and take the necessary precautions.
+            If you are infected, we anonymously notify everyone who has been in
+            contact with you and anyone else who went to the same place as you
+            to get tested and take the necessary precautions.
           </p>
           <h2>What about privacy?</h2>
           <p>
-            Your data is encrypted and stored in the cloud. If you report
-            positive for COVID-19, we send an anonymous notification to people
-            you may have come in contact with without revealing your name. You
-            do not need to worry about a pitchfork mob coming for you. You are
-            perfectly safe (from them!)
+            Your data is end-to-end encrypted and stored in the cloud. If you
+            report positive for COVID-19, we send an anonymous notification to
+            people you may have come in contact without revealing your identity.
+            You do not need to worry about a pitchfork mob coming for you. You
+            are perfectly safe (from them!)
           </p>
           <h2>If I use this app, I can go out and meet anyone I want?</h2>
           <p>
