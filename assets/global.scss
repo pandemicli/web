@@ -44,7 +44,7 @@ p {
 }
 
 figure {
-  @apply m-8 w-screenshot;
+  @apply m-8 flex-grow;
 
   img {
     @apply rounded-lg;
@@ -76,5 +76,19 @@ main {
   td,
   th {
     @apply border-gray-900;
+  }
+}
+
+// responsive
+
+@media (max-width: 1024px) {
+  figure {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  figure {
+    width: calc(50% - 4rem);
   }
 }

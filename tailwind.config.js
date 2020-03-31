@@ -22,9 +22,6 @@ module.exports = {
           'Apple Color Emoji',
           'Segoe UI Emoji'
         ]
-      },
-      width: {
-        screenshot: '24rem'
       }
     }
   },
