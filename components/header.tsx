@@ -13,7 +13,7 @@ export const Header: FunctionComponent = () => (
         <div className="ml-8">
           <h1>Pandemic.li</h1>
           <p className="m-0 text-black dark:text-white">
-            Privacy-focused social tracking for Coronavirus
+            Privacy-focused contact tracing for Coronavirus
           </p>
         </div>
       </a>

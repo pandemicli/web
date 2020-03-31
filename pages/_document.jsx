@@ -7,11 +7,11 @@ export default class Doc extends Document {
       <html>
         <Head>
           <meta
-            content="Privacy-focused social tracking for Coronavirus"
+            content="Privacy-focused contact tracing for Coronavirus"
             name="description"
           />
           <meta
-            content="pandemic, corona, virus, covid-19, tracking, safety, health"
+            content="pandemic, corona, virus, covid-19, contact tracing, safety, health"
             name="keywords"
           />
         </Head>
