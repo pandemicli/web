@@ -15,7 +15,7 @@ export default class Doc extends Document {
             name="keywords"
           />
         </Head>
-        <body className="bg-white text-black dark:bg-black dark:text-white font-sans cursor-default container mx-auto">
+        <body className="bg-white text-black dark:bg-black dark:text-white font-sans cursor-default container">
           <script src="/js/noflash.js" />
           <Main />
           <NextScript />
