@@ -10,8 +10,9 @@ module.exports = {
         primary: '#4caf50'
       },
       fontFamily: {
+        mono: ['IBM Plex Mono', 'SFMono-Regular', 'Consolas', 'monospace'],
         sans: [
-          'Inter var',
+          'Inter',
           '-apple-system',
           'BlinkMacSystemFont',
           'Segoe UI',
@@ -23,7 +24,7 @@ module.exports = {
         ]
       },
       width: {
-        screenshot: '30rem'
+        screenshot: '24rem'
       }
     }
   },

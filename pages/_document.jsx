@@ -5,8 +5,17 @@ export default class Doc extends Document {
   render() {
     return (
       <html>
-        <Head />
-        <body className="bg-white text-black dark:bg-black dark:text-white font-sans cursor-default m-8">
+        <Head>
+          <meta
+            content="Privacy-focused social tracking for Coronavirus"
+            name="description"
+          />
+          <meta
+            content="pandemic, corona, virus, covid-19, tracking, safety, health"
+            name="keywords"
+          />
+        </Head>
+        <body className="bg-white text-black dark:bg-black dark:text-white font-sans cursor-default container mx-auto">
           <script src="/js/noflash.js" />
           <Main />
           <NextScript />

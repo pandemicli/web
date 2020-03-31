@@ -1,6 +1,7 @@
 // fonts
 
 @import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
 // tailwind
 
@@ -39,7 +40,7 @@ img {
 }
 
 p {
-  @apply max-w-2xl my-4;
+  @apply my-4 max-w-2xl;
 }
 
 figure {
@@ -54,8 +55,26 @@ figure {
   }
 }
 
+table {
+  @apply w-full;
+
+  td,
+  th {
+    @apply align-middle text-left p-2 border border-gray-900;
+  }
+}
+
+// layout
+
+main {
+  @apply m-8;
+}
+
 // dark
 
-.dark-social-icon {
-  fill: magenta;
+.dark-mode {
+  td,
+  th {
+    @apply border-gray-900;
+  }
 }
