@@ -1,10 +1,10 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
 import React from 'react'
 
 import { Footer, Header } from '../components'
 import { useTheme } from '../hooks'
-import Link from 'next/link'
 
 const Contribute: NextPage = () => {
   useTheme()
@@ -20,7 +20,7 @@ const Contribute: NextPage = () => {
       <main>
         <h2>How can I contribute?</h2>
         <p>
-          I need help getting the word out to government hehalth departments so
+          I need help getting the word out to government health departments so
           they can endorse the app. Here is a{' '}
           <a href="/static/pandemicli.pdf">deck</a> you may use.
         </p>
