@@ -1,16 +1,17 @@
+import axios from 'axios'
 import { NextPage } from 'next'
 import Head from 'next/head'
 import React from 'react'
 
-import { Footer, Header, Spinner } from '../components'
-import { useFetch, useTheme } from '../hooks'
+import { Footer, Header } from '../components'
+import { useTheme } from '../hooks'
 
-const Translations: NextPage = () => {
+interface Props {
+  translations: JSON
+}
+
+const Translations: NextPage<Props> = ({ translations }) => {
   useTheme()
-
-  const { data, loading } = useFetch<{
-    [key: string]: string
-  }>('/api/translations')
 
   return (
     <>
@@ -22,32 +23,37 @@ const Translations: NextPage = () => {
 
       <main>
         <h2 className="mb-8">Translations</h2>
-        {loading && <Spinner />}
-        {data && (
-          <table>
-            <thead>
-              <tr>
-                <th>Key</th>
-                <th>Value</th>
+        <table>
+          <thead>
+            <tr>
+              <th>Key</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            {Object.entries(translations).map(([key, value], index) => (
+              <tr key={index}>
+                <td>
+                  <code>{key}</code>
+                </td>
+                <td>{value}</td>
               </tr>
-            </thead>
-            <tbody>
-              {Object.entries(data).map(([key, value], index) => (
-                <tr key={index}>
-                  <td>
-                    <code>{key}</code>
-                  </td>
-                  <td>{value}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        )}
+            ))}
+          </tbody>
+        </table>
       </main>
 
       <Footer />
     </>
   )
+}
+
+Translations.getInitialProps = async () => {
+  const { data } = await axios(process.env.GITHUB_TRANSLATIONS_URI)
+
+  return {
+    translations: data
+  }
 }
 
 export default Translations
