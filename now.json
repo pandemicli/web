@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "regions": ["dub1", "sfo1"],
   "build": {
     "env": {
       "GITHUB_TRANSLATIONS_URI": "@pandemicli-github_translations_uri"
