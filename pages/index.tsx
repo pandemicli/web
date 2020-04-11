@@ -50,8 +50,11 @@ const Home: NextPage = () => {
         </p>
         <h2>I am sold. Where do I get it?</h2>
         <p>
-          I am working hard to bring this to App Store and Google Play within
-          the next few days. Please stay tuned and follow{' '}
+          You can{' '}
+          <a href="https://alizahid0.typeform.com/to/V9Zd0y">
+            sign up for beta
+          </a>{' '}
+          now. Please stay tuned and follow{' '}
           <a href="https://twitter.com/pandemicli">@pandemicli</a> on Twitter
           for updates.
         </p>

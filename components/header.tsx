@@ -19,9 +19,11 @@ export const Header: FunctionComponent = () => (
       </a>
     </Link>
     <nav className="mt-8 lg:mt-0">
-      <Link href="/">
-        <a className="font-medium">About</a>
-      </Link>
+      <a
+        className="font-medium"
+        href="https://alizahid0.typeform.com/to/V9Zd0y">
+        Beta
+      </a>
       <Link href="/screenshots">
         <a className="font-medium ml-4">Screenshots</a>
       </Link>
